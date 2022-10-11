@@ -1,4 +1,4 @@
-package SeleniumGlueCode;
+package TestCases;
 
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
@@ -16,21 +16,27 @@ public class NewTest {
 		switch (BrowserType) {
 		case "Chrome":
 			System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver.exe");
-			 driver = new ChromeDriver();
+			driver = new ChromeDriver();
 			break;
 		case "Firefox":
 			System.setProperty("webdriver.gecko.driver", "./src/test/resources/geckodriver.exe");
-			 driver = new FirefoxDriver();
+			driver = new FirefoxDriver();
 			break;
 		default:
-			throw new Exception("Navegador"+ BrowserType +" no soportado");
+			throw new Exception("Navegador" + BrowserType + " no soportado");
 		}
 		driver.get(url);
 		driver.manage().window().maximize();
 	}
 
 	@Test
-	public void f() {
+	public void PrimeraPrueba() {
+		System.out.println("primera prueba");
+	}
+
+	@Test
+	public void SegundaPrueba() {
+		System.out.println("segunda prueba>>>>>>>>>");
 	}
 
 }
