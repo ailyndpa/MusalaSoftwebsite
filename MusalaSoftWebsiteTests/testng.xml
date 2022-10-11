@@ -5,13 +5,13 @@
 	<test name="Test on Chrome">
 		<parameter name="BrowserType" value="Chrome" />
 		<classes>
-			<class name="SeleniumGlueCode.NewTest" />
+			<class name="TestCases.NewTest" />
 		</classes>
 	</test>
 	<test name="Test on Firefox">
 		<parameter name="BrowserType" value="Firefox" />
 		<classes>
-			<class name="SeleniumGlueCode.NewTest" />
+			<class name="TestCases.NewTest" />
 		</classes>
 	</test>
 </suite>
