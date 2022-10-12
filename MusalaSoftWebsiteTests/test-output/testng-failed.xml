@@ -5,23 +5,12 @@
   <test thread-count="5" parallel="tests" name="Test on Firefox(failed)">
     <parameter name="BrowserType" value="Firefox"/>
     <classes>
-      <class name="TestCases.NewTest">
+      <class name="TestCases.TestCase2">
         <methods>
+          <include name="company"/>
           <include name="beforeClass"/>
-          <include name="PrimeraPrueba"/>
         </methods>
-      </class> <!-- TestCases.NewTest -->
+      </class> <!-- TestCases.TestCase2 -->
     </classes>
   </test> <!-- Test on Firefox(failed) -->
-  <test thread-count="5" parallel="tests" name="Test on Chrome(failed)">
-    <parameter name="BrowserType" value="Chrome"/>
-    <classes>
-      <class name="TestCases.NewTest">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="PrimeraPrueba"/>
-        </methods>
-      </class> <!-- TestCases.NewTest -->
-    </classes>
-  </test> <!-- Test on Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

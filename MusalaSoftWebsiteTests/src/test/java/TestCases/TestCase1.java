@@ -36,7 +36,7 @@ public class TestCase1 {
 			driver = new FirefoxDriver();
 			break;
 		default:
-			throw new Exception("Navegador" + BrowserType + " no soportado");
+			throw new Exception("Browser" + BrowserType + " not supported");
 		}
 		driver.get(url);
 		driver.manage().window().maximize();
