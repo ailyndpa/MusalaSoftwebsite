@@ -1,7 +1,10 @@
 package TestCases;
 
 import org.testng.annotations.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
@@ -30,8 +33,9 @@ public class TestCase2 {
 	}
 
 	@Test
-	public void company() {
-		
+	public void company() throws InterruptedException {
+		driver.findElement(By.xpath("//div[@id='menu']/ul[@id='menu-main-nav-1']/li[1]/a")).click();
+		System.out.println(driver.getCurrentUrl());		
 	}
 
 }
